@@ -10,7 +10,7 @@ function App() {
   const onSubmit = (values) => { setPlotValues(values); setShowDialog(true); };
 
   return (
-    <div className="App">
+    <div>
       <PlotForm onSubmit={onSubmit} />
       <PlotDialog
         open={showDialog}
