@@ -3,6 +3,7 @@ import React from 'react';
 import { Form } from 'formik';
 
 import InputField from 'components/shared/form/InputField';
+import Button from 'components/shared/Button';
 
 const FormPresenter = () => {
   return (
@@ -15,6 +16,7 @@ const FormPresenter = () => {
         name="description"
         label="common.description"
       />
+      <Button type="submit" label="common.generate.plot" />
     </Form>
   );
 };

@@ -46,8 +46,12 @@ Field.propTypes = {
   field: PropTypes.object.isRequired,
   form: PropTypes.object.isRequired,
   children: PropTypes.any.isRequired,
-  formControlProps: PropTypes.object.isRequired,
+  formControlProps: PropTypes.object,
   label: PropTypes.string.isRequired,
+};
+
+Field.defaultProps = {
+  formControlProps: {},
 };
 
 export default Field;

@@ -19,7 +19,11 @@ const Input = ({
 );
 
 Input.propTypes = {
-  inputProps: PropTypes.object.isRequired,
+  inputProps: PropTypes.object,
+};
+
+Input.defaultProps = {
+  inputProps: {},
 };
 
 const InputField = (props) => <FormikField component={Input} {...props} />;
