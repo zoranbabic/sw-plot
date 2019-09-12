@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import helpers from 'utils/helpers';
 import PlotForm from 'components/plotForm/Form.container';
 import PlotDialog from 'components/plotDialog/PlotDialog';
 
@@ -8,7 +9,9 @@ function App() {
   const [plotValues, setPlotValues] = useState({});
   const handleClose = () => setShowDialog(false);
   const onSubmit = (values) => {
-    setPlotValues(transformFormValues(values));
+    console.log(values);
+    console.log(helpers.transformFormValues(values));
+    setPlotValues(helpers.transformFormValues(values));
     setShowDialog(true);
   };
 
