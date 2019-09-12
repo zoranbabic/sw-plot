@@ -1,9 +1,12 @@
 {
   "validators.required": "Required",
-  "common.title": "Title",
-  "common.description": "Description",
+
   "common.generate.plot": "Generate Plot",
   "common.close": "Close",
+
+  "form.title": "Title",
+  "form.description": "Description",
+  "form.person": "Person",
 
   "plot.hero": "Hero {personName}",
   "plot.protagonist": "Protagonist {planetName}"
