@@ -13,8 +13,8 @@ const Input = ({
     <MuiInput
       required={false}
       {...fieldProps.field}
-      {...inputProps}
       autoComplete="off"
+      {...inputProps}
     />
   </Field>
 );

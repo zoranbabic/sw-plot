@@ -25,6 +25,7 @@ const FormPresenter = () => (
     <InputField
       name="description"
       label="form.description"
+      validate={validator(required)}
     />
     <AsyncSelectField
       label="form.person"
