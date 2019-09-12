@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Field as FormikField } from 'formik';
-import InputBase from '@material-ui/core/InputBase';
+import MuiInput from '@material-ui/core/Input';
 
 import Field from './Field';
 
@@ -10,7 +10,7 @@ const Input = ({
   ...fieldProps
 }) => (
   <Field {...fieldProps}>
-    <InputBase
+    <MuiInput
       required={false}
       {...fieldProps.field}
       {...inputProps}

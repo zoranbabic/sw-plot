@@ -9,8 +9,6 @@ function App() {
   const [plotValues, setPlotValues] = useState({});
   const handleClose = () => setShowDialog(false);
   const onSubmit = (values) => {
-    console.log(values);
-    console.log(helpers.transformFormValues(values));
     setPlotValues(helpers.transformFormValues(values));
     setShowDialog(true);
   };
