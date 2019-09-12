@@ -8,7 +8,7 @@ const Button = ({
   label,
   ...props
 }) => (
-  <MuiButton {...props}>
+  <MuiButton variant="contained" color="primary" {...props}>
     <Text message={label} />
   </MuiButton>
 );

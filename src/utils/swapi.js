@@ -12,7 +12,7 @@ const getResources = async (search, loadedOptions, { page = 1 }, url) => {
     return {
       options: response.data.results.map((resource) => (
         {
-          value: resource.name,
+          value: resource,
           label: resource.name,
         }
       )),

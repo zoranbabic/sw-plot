@@ -7,6 +7,7 @@ import Field from './Field';
 
 const AsyncSelect = ({
   loadOptions,
+  selectOptions,
   ...fieldProps
 }) => {
   const onChange = (value) => {
@@ -21,6 +22,8 @@ const AsyncSelect = ({
     <Field {...fieldProps}>
       <AsyncPaginate
         {...fieldProps.field}
+        isClearable
+        {...selectOptions}
         onChange={onChange}
         loadOptions={loadOptions}
         additional={{
@@ -33,6 +36,11 @@ const AsyncSelect = ({
 
 AsyncSelect.propTypes = {
   loadOptions: PropTypes.func.isRequired,
+  selectOptions: PropTypes.object,
+};
+
+AsyncSelect.defaultProps = {
+  selectOptions: {},
 };
 
 const AsyncSelectField = (props) => <FormikField component={AsyncSelect} {...props} />;

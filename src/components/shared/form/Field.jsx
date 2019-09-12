@@ -12,7 +12,8 @@ import Text from '../Text';
 
 const Field = ({
   field,
-  form: { touched, errors },
+  form,
+  form: { touched, errors, isSubmitting },
   children,
   formControlProps,
   label,
@@ -20,6 +21,11 @@ const Field = ({
   const error = _.get(errors, field.name);
   const isFieldTouched = _.get(touched, field.name);
   const shouldDisplayError = Boolean(isFieldTouched && error);
+
+  // Workaround for untouched select fields
+  if (error && !shouldDisplayError && isSubmitting) {
+    form.setFieldTouched(field.name, true);
+  }
 
   const LabelComponent = label && (
     <InputLabel htmlFor={field.name}>

@@ -7,7 +7,8 @@
   "form.title": "Title",
   "form.description": "Description",
   "form.person": "Person",
+  "form.planet": "Planet",
 
-  "plot.hero": "Hero {personName}",
-  "plot.protagonist": "Protagonist {planetName}"
+  "plot.INTO_THE_SUNSET": "This is the story of our hero {personName}. He was an ordinary {speciesName}. The sun was about to set on {planetName}. It was an interesting planet with around {planetPopulation} inhabitants. He was cruising in his {vehicleName} and didn't have the slightest idea that his life was about to change in a way he couldn't imagine...",
+  "plot.SAVING_THE_PLANET": "It was early morning when {personName} noticed an object on the horizon. It was a {starshipName} model {starshipModel}. He had never seen such a starship on his home planet {planetName} where he was a single {speciesName} among {planetPopulation} living on the planet, but he would become the one who will save them all..."
 }

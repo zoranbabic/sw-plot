@@ -7,7 +7,10 @@ function App() {
   const [showDialog, setShowDialog] = useState(false);
   const [plotValues, setPlotValues] = useState({});
   const handleClose = () => setShowDialog(false);
-  const onSubmit = (values) => { setPlotValues(values); setShowDialog(true); };
+  const onSubmit = (values) => {
+    setPlotValues(transformFormValues(values));
+    setShowDialog(true);
+  };
 
   return (
     <div>
