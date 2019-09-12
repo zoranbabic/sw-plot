@@ -23,6 +23,9 @@ const AsyncSelect = ({
         {...fieldProps.field}
         onChange={onChange}
         loadOptions={loadOptions}
+        additional={{
+          page: 1,
+        }}
       />
     </Field>
   );
